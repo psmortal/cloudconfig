@@ -1,4 +1,12 @@
+
+
 name: sifansifan
+
+spring:
+  application:
+    name: customer
+  profiles: dev
+
 server:
   port: 8088
 eureka:
