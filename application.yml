@@ -1,7 +1,3 @@
-
-
-name: sifansifan
-
 spring:
   application:
     name: customer
@@ -13,3 +9,20 @@ eureka:
  client:
    service-url:
      defaultZone: http://localhost:8384/eureka
+
+name: dev
+
+---
+spring:
+  application:
+    name: customer
+  profiles: test
+
+server:
+  port: 8088
+eureka:
+ client:
+   service-url:
+     defaultZone: http://localhost:8384/eureka
+
+name: test
